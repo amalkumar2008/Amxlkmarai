@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#087f52">
+  <title>Mallu AI — Kerala's AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg"></div>
+
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-icon">🌴</div>
+        <div>
+          <strong>Mallu AI</strong>
+          <span>Kerala's AI</span>
+        </div>
+      </div>
+
+      <button class="new-chat" id="newChat">＋ New chat</button>
+
+      <p class="label">Recent chats</p>
+      <button class="chat-item">🌴 Kerala fun facts</button>
+      <button class="chat-item">💬 Manglish helper</button>
+      <button class="chat-item">🛶 Kerala travel plan</button>
+
+      <div class="side-bottom">
+        <span>🌿 Kerala mode</span>
+        <span class="online-dot"></span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="menu" id="menu">☰</button>
+        <div class="status"><span class="online-dot"></span> Online</div>
+        <div class="mode">Kerala mode 🌿</div>
+      </header>
+
+      <section class="welcome" id="welcome">
+        <div class="hero-icon">🌴</div>
+        <p class="eyebrow">NAMASKAARAM • NAMMAL READY</p>
+        <h1>Namaskaaram, entha venam?</h1>
+        <p class="subtitle">
+          Your modern Kerala AI companion. Ask in Malayalam, Manglish, or English —
+          Mallu AI is ready.
+        </p>
+
+        <div class="suggestions">
+          <button class="suggestion" data-prompt="Give me a Kerala recipe for puttu and kadala.">
+            <span>🥥</span><b>Kerala recipes</b><small>Food ideas & recipes</small>
+          </button>
+          <button class="suggestion" data-prompt="Help me write this in Malayalam.">
+            <span>📝</span><b>Malayalam</b><small>Translate or write</small>
+          </button>
+          <button class="suggestion" data-prompt="Plan a 2 day trip around Kerala.">
+            <span>🛶</span><b>Explore Kerala</b><small>Trips & places</small>
+          </button>
+        </div>
+      </section>
+
+      <section class="messages" id="messages"></section>
+
+      <div class="composer-wrap">
+        <form class="composer" id="composer">
+          <textarea id="input" rows="1" placeholder="Ask Mallu AI... എന്താ ചോദിക്കാനുള്ളത്?"></textarea>
+          <button class="send" aria-label="Send">➤</button>
+        </form>
+        <p class="hint">Mallu AI demo • Malayalam · Manglish · English</p>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
